@@ -92,7 +92,6 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 let userTypings = {};
-
 /** Socket IO Connections */
 io.on('connection', socket => {
     let currentRoomId = null;
