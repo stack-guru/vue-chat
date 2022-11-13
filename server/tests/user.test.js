@@ -6,7 +6,7 @@ let token;
 let request = supertest(app);
 
 beforeAll(async () => {
-    jest.setTimeout(30000);
+    jest.setTimeout(20000);
     const response = await request
         .post('/api/auth/login')
         .send({ email: userSeedData[0].email, password: userSeedData[0].password });
